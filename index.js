@@ -2,7 +2,7 @@ const http = require("http");
 const express = require("express");
 const socketio = require("socket.io");
 
-const PORT = 4000 || process.env.PORT;
+const PORT = process.env.PORT || 4000;
 
 const app = express();
 const server = http.createServer(app);
